@@ -1,0 +1,206 @@
+body {
+    font-family: sans-serif; /* Setting the font family */
+    margin: 0%; /* Resetting the margin */
+    background-color: rgb(234, 234, 234); /* Applying background to the body */
+}
+
+.logo {
+    padding-left: 20px; /* Adding left padding */
+}
+
+header {
+    background-color: rgb(52, 157, 249); /* Setting the header background color */
+    width: 100%; /* Setting the header's width to span the entire viewport */
+    display: flex; /* Using flexbox for layout within the header */
+    color: white; /* Setting text color to the header */
+    align-items: center; /* centering items vertically */
+    justify-content: space-between; /* helps with Spacing items evenly */
+    margin-bottom: 20px;/* Providing a margin bottom */
+}
+
+.search-bar {
+    display: flex; /* Using flexbox */
+    align-items: center; /* Centering items vertically */
+    justify-content: left; /* Aligning items to the left */
+    width: 250px; /* Setting the width */
+    height: 30px; /* Setting a specific height */
+    padding-left: 1%; /* Adding left padding */
+    background-color: white; /* Applying a white background */
+    border: 1px solid black; /* Adding a black border */
+    color: rgba(0, 0, 0, 0.502); /* Setting text color along with transparency */
+}
+
+nav a {
+    text-decoration: none; /* Removing the hyperlink underline */
+    color: rgb(255, 255, 255); /* Setting the text color */
+    padding-right: 20px; /* Adding right padding */
+}
+
+main {
+    margin-top: 30px; /* Adding a top margin */
+    margin: 0 auto; /* Centering the main content horizontally */
+    max-width: 80rem; /* Setting maximum width for the main content */
+    display: flex; /* Using flexbox for layout */
+    gap: 10px; /* Specifying a gap between flex items */
+    flex-direction: column; /* Laying out flex items in a column */
+    padding-left: 1rem; /* Adding left padding */
+    padding-right: 1rem; /* Adding right padding */
+    
+}
+
+p {
+    font-size: 15px; /* Setting the font size for paragraphs */
+    color: rgb(0, 0, 0, 0.808); /* Applying a color with transparency to paragraphs */
+    line-height: 20px; /* Setting the line height for paragraphs */
+}
+
+
+.box {
+    display: flex; /* Using flexbox for layout */
+    flex-direction: column; /* Setting the direction of flex items to column */
+    background-color: white; /* Applying background */
+    border: 2px solid rgba(201, 201, 201, 0.276); /* Adding a border with some transparency */
+    padding: 20px; /* Applying padding */
+    border-radius: 1%; /* Adding border radius */
+    box-shadow: 2px 2px 2px rgb(201, 201, 201); /* Adding a subtle box shadow */
+}
+
+.flex {
+    flex: 1; /* here Flex property is set to 1 */
+}
+
+.left {
+    flex-direction: column; /* Arranging flex items in a column */
+    display: flex; /* Using flexbox for layout */
+    gap: 1rem; /* providing a gap between items */
+    flex: 1.4; /* Assigning a flex value of 1.4 */
+}
+
+/* Styling for the Avengers section */
+
+.Avengers {
+    padding: 0; 
+    flex: 2; 
+    height: fit-content; /* Adjusts height to fit its content */
+
+}
+
+/* Styling for elements with class "LoneBox" */
+.LoneBox {
+    display: flex; /* Display as a flex container */
+    flex-direction: column; /* Items are stacked vertically */
+    gap: 1rem; 
+    flex: 1; 
+}
+
+/* Styling for elements with class "predatorsbox" */
+.predatorsbox {
+    display: flex; /* Display as a flex container */
+    flex-direction: column; /* Items are stacked vertically */
+    gap: 1rem; 
+    flex: 1;
+}
+
+/* Styling for the element with ID "Heading1" */
+#Heading1 {
+    padding: 10px; /* Apply padding of 10px */
+}
+
+/* Styling for all <img> elements */
+img {
+    max-width: 100%; /* Set maximum width to 100% of its container */
+}
+
+/* Styling for the element with ID "button" */
+#button {
+    font-size: 14px; /* Setting font size to 14px */
+    height: 30px; /* Setting height to 30px */
+    width: 100px; /* Setting width to 100px */
+    background-color: rgb(52, 157, 249); /* Sets background color */
+    color: white; /* Sets text color to white */
+    display: flex; /* Display as a flex container */
+    justify-content: center; /*will Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    border-radius: 8%; /* Applying a border radius of 8% */
+    cursor: pointer; /* Sets cursor to pointer on hover */
+}
+
+/* Styling for elements with class "Button1" */
+.Button1 {
+    display: flex; /* Display as a flex container */
+    justify-content: flex-end; /* Align content to the right end */
+    margin: 10px; /* Apply a margin of 10px */
+}
+
+/* Styling for the footer */
+footer {
+    display: flex; /* Display as a flex container */
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    padding-top: 90px; /* Apply top padding of 90px */
+    padding-bottom: 30px; /* Apply bottom padding of 30px */
+}
+
+/* MEDIA QUERIES */
+
+
+/* media query for screens wider than 480px */
+@media (min-width: 481px) {
+    /* adjusting layout for LoneBox and predatorsbox to a row layout */
+    .LoneBox {
+        flex-direction: row ;
+    }
+
+    .predatorsbox {
+        flex-direction: row;
+    }
+}
+
+/* media query for screens wider than 1024px */
+@media (min-width: 1024px) {
+     /* changing the main layout to a row and adjusting LoneBox and predatorsbox to column layout */
+    main {
+        flex-direction: row;
+    }
+
+    .LoneBox {
+        flex-direction: column;
+    }
+
+   .predatorsbox {
+        flex-direction: column;
+    }
+    /* hiding the last child of nav-bar within the specified width */
+    .nav-bar nav :last-child{
+        display: none;
+    }
+}
+
+/* media query for screens smaller than or equal to 1022px */
+@media (max-width: 1022px) {
+     /* hiding all nav-bar children except the last child and the search-bar element */
+    .nav-bar nav :not(:last-child){
+        display: none;
+    }
+    /* hiding the search bar */
+    .search-bar {
+        display: none;
+    }
+    
+}
+/* media query for screens wider than 1280px */
+@media (min-width: 1280px) {
+    /* adjusting the layout of LoneBox and predatorsbox to a row layout */
+    .LoneBox {
+        flex-direction: row;
+    }
+
+    .predatorsbox {
+        flex-direction: row;
+    }
+   /* hiding the last child of nav-bar */
+    .nav-bar nav :last-child {
+        display: none;
+    }
+
+    }

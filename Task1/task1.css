@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box; /* Applies border-box box model for all elements */
+    margin: 0 auto; /* Centers the elements horizontally */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f7; /* Sets background color for the entire body */
+    font-size: small; /* Sets a smaller default font size */
+}
+
+header {
+    padding: 15px; /* padding for the header */
+    background-color: #ffffff; /* Sets the background color for the header */
+}
+
+header img {
+    height: 60px; /* Fixes the height of the header image */
+}
+
+.image-grid {
+    display: grid; /* Uses CSS Grid for the image grid */
+    grid-template-columns: repeat(3, 1fr); /* Creates a grid layout with 3 columns */
+}
+
+img {
+    max-width: 100%; /* Ensures images don't exceed their container */
+    height: auto; /* Maintains the aspect ratio of images */
+}
+
+.main-container p {
+    margin: 0;
+    padding: 20px; /* Adds padding to paragraphs within main container */
+    background-color: #ffffff; /* Sets background color for paragraphs */
+}
+
+.main-container {
+    max-width: 1024px; /* Sets maximum width for elements within the main container */
+}
+
+footer {
+    background-color: #14181d; /* Sets background color for the footer */
+    color: #ffffff; /* Sets text color for the footer */
+    padding: 6px; /* Adds padding to the footer */
+    text-align: center; /* Centers text within the footer */
+}
+
+/* Media queries for responsive design */
+@media (max-width: 1024px) {
+    .image-grid {
+        grid-template-columns: repeat(3, 1fr); /* Adjusts grid layout to 3 columns on smaller screens */
+    }
+}
+
+@media (max-width: 800px) {
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr); /* Adjusts grid layout to 2 columns on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .image-grid {
+        grid-template-columns: 1fr; /* Adjusts grid layout to 1 column on smaller screens */
+    }
+}
+
+
+
+
