@@ -14,6 +14,7 @@ header, footer {
 
 footer {
   height: 50px;
+  margin-top: 20px;
 }
 
 header .top-container, footer .top-container {
@@ -48,7 +49,7 @@ header .top-container-box img, footer .top-container-box img {
   margin-top: 5px;
 }
 .bottom-container .bottom-container-lines .line-one {
-  background-color: #43658b;
+  background-color: #4e89ae;
   width: 100%;
   height: 5vh;
 }
@@ -56,7 +57,7 @@ header .top-container-box img, footer .top-container-box img {
   background-color: #444;
 }
 .bottom-container .bottom-container-lines .line-two {
-  background-color: #ed6663;
+  background-color: #43658b;
   width: 100%;
   height: 5vh;
 }
@@ -64,7 +65,7 @@ header .top-container-box img, footer .top-container-box img {
   background-color: #444;
 }
 .bottom-container .bottom-container-lines .line-three {
-  background-color: #ffa372;
+  background-color: #ed6663;
   width: 100%;
   height: 5vh;
 }
@@ -72,7 +73,7 @@ header .top-container-box img, footer .top-container-box img {
   background-color: #444;
 }
 .bottom-container .bottom-container-lines .line-four {
-  background-color: #8ccff7;
+  background-color: #ffa372;
   width: 100%;
   height: 5vh;
 }
@@ -86,7 +87,7 @@ header .top-container-box img, footer .top-container-box img {
   margin-top: 40px;
 }
 .bottom-container .bottom-container-circles .circle-one {
-  background-color: #43658b;
+  background-color: #4e89ae;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -96,7 +97,7 @@ header .top-container-box img, footer .top-container-box img {
   background-color: #444;
 }
 .bottom-container .bottom-container-circles .circle-two {
-  background-color: #ed6663;
+  background-color: #43658b;
   border-radius: 50%;
   width: 70px;
   height: 70px;
@@ -106,7 +107,7 @@ header .top-container-box img, footer .top-container-box img {
   background-color: #444;
 }
 .bottom-container .bottom-container-circles .circle-three {
-  background-color: #ffa372;
+  background-color: #ed6663;
   border-radius: 50%;
   width: 80px;
   height: 80px;
@@ -116,7 +117,7 @@ header .top-container-box img, footer .top-container-box img {
   background-color: #444;
 }
 .bottom-container .circle-four {
-  background-color: #8ccff7;
+  background-color: #ffa372;
   border-radius: 50%;
   width: 90px;
   height: 90px;
